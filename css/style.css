@@ -1,0 +1,138 @@
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.main {
+    padding: 200px 0 50px 0;
+    background: url("../img/main-bg.jpg") no-repeat;
+    background-position: center top;
+}
+.content-wrapper {
+    background: rgba(0, 0, 0, 0.5);
+}
+.content-block {
+    width: 900px;
+    margin: 0 auto;
+}
+.menu {
+    height: 50px;
+}
+.menu .button {
+    width: 180px;
+    height: 50px;
+    float: left;
+    background: url("../img/button-bg.jpg");
+    text-align: center;
+    color: #d1d1d1;
+    cursor: pointer;
+    font-family: 'Times New Roman', serif;
+    font-size: 14px;
+    padding-top: 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+.menu .button:hover {
+    color: white;
+}
+
+
+.button .pop-up {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: none;
+    background: #333333;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.button:nth-of-type(2):hover .pop-up {
+    display: block;
+}
+.pop-up a {
+    margin: 0;
+    padding: 10px;
+    -moz-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    -webkit-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    text-align: left;
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+.pop-up a:first-of-type {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.pop-up a:last-of-type {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: none;
+}
+.pop-up a:hover {
+    background: #0186ba;
+    text-decoration: none;
+}
+.pop-up a:first-of-type::after {
+    content: "";
+    border: 8px solid transparent;
+    border-bottom-color: #333333;
+    top: -16px;
+    left: 40px;
+    position: absolute;
+}
+.pop-up a:first-of-type:hover::after {
+    border-bottom-color: #0186ba;
+}
+
+.content {
+    width: 100%;
+    min-height: 400px;
+    padding: 50px;
+    box-sizing: border-box;
+    background: white;
+}
+.glavnaya img {
+    margin: 5px;
+    display: inline-block;
+    vertical-align: top;
+    width: 380px;
+    height: 253px;
+}
+.katalog h3 {
+    text-align: center;
+}
+.katalog img {
+    display: block;
+    margin: 0 auto;
+}
+.bold {
+    font-weight: bold;
+}
+.contacts img {
+    width: 800px;
+    height: auto;
+}
+.contacts .grey {
+    font-family: sans-serif;
+    margin: 5px 0;
+    color: #454545;
+}
+.contacts p img {
+    width: 50px;
+    height: auto;
+}
+iframe {
+    width: 800px;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+}
+.service h3 {
+    font-size: 28px;
+    font-family: sans-serif;
+}
