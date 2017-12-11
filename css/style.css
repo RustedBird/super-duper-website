@@ -8,7 +8,9 @@ body, html {
 .main {
     padding: 200px 0 50px 0;
     background: url("../img/main-bg.jpg") no-repeat;
+    background-size: cover;
     background-position: center top;
+    height: 100%;
 }
 .content-wrapper {
     background: rgba(0, 0, 0, 0.5);
